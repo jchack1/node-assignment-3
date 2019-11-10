@@ -1,0 +1,59 @@
+@import url(reset.css);
+@import url(global-styles.css);
+
+
+main{
+    margin: 5vmin;
+}
+
+h1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: start;
+    align-self: center;
+    text-align: left;
+    margin: 5vmin; 
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    max-width: 60vw;
+    margin: 2vmin;
+    border-radius: 5px;
+}
+
+section > img:hover{
+    transform: scale(1.1);
+    transition: all .25s ease;
+    box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+
+@media all and (min-width: 620px){
+    
+    #photo-gallery{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-items: center;
+    }
+
+    #reflection, #red-flower, #canmore-trees{
+        max-width: 200px;
+        margin: 2vmin;
+    }
+
+    #highway-93, #dragonfly, #fushimi-inari, #harajuku-road{
+        max-width: 300px;
+        margin: 2vmin;
+    }
+}
+

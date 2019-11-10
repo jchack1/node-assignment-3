@@ -1,0 +1,46 @@
+@import url(global-styles.css);
+@import url(reset.css);
+
+
+img{
+    max-width: 220px;
+    margin: 2vmin;
+    border-radius: 5px;
+}
+
+h1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: start;
+    align-self: center;
+    text-align: left;
+    margin: 5vmin; 
+}
+
+#h2draw{
+    margin-top: 10vmin;
+}
+
+main{
+    margin: 5vmin;
+}
+#printmaking-gallery, #drawing-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section > img:hover{
+    transform: scale(1.1);
+    transition: all .25s ease;
+    box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+
+@media all and (max-width: 570px){
+    img{
+        max-width: 400px;
+    }
+    
+}

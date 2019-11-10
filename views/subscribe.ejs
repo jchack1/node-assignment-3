@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Julia Hack | Subscribe</title>
+    <link rel="stylesheet" href="/css/contactstyles.css">
+</head>
+<%- include partials/header %>
+
+    <main>
+        
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>subscribe to my newsletter</legend>
+
+                <label for="name">name</label>
+                <input type="text" id="name" name="name" required>
+                    
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="checkbox">I am over 18</label>
+                <input type="checkbox" id="checkbox" name="checkbox" value="true" required>
+                
+                <button type="submit" name="submit-button" id="submit-button">Submit</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+
+<%- include partials/footer %>
